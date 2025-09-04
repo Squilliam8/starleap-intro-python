@@ -8,11 +8,24 @@ print("********** Ch 3 Exercise 1 **********")
 
 print("Ch 3 Exercise 1: Not implemented") # Delete this line when you write your code!
 
+def right_justify(input):
+    length = len(input)
+    print("length = ", length)
+    target = 70
+    spaces = target - length
+    spaces_string = ' '*spaces
+    print(spaces_string + input)
+
+right_justify('67 mustard mangos')
+
+
+
+
 
 
 print("********** Ch 3 Exercise 2 **********")
 
-# Do your work for Excercise 2 here.
+
 
 print("Ch 3 Exercise 2: Not implemented") # Delete this line when you write your code!
 

@@ -9,6 +9,15 @@ Write a function named right_justify that takes a string named *s* as a paramete
 ```
 Hint: Use string concatenation and repetition. Also, Python provides a built-in function called len that returns the length of a string, so the value of len('monty') is 5.
 
+
+right_justify('61 spaces')
+
+
+
+
+
+
+
 ## Exercise 2  
 A function object is a value you can assign to a variable or pass as an argument. For example, do_twice is a function that takes a function object as an argument and calls it twice:
 
