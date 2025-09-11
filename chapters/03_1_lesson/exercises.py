@@ -24,10 +24,21 @@ right_justify('67 mustard mangos')
 
 
 print("********** Ch 3 Exercise 2 **********")
+def do_twice(f):
+    f()
+    f()
+    
+def print_spam():
+    print('spam')
+
+do_twice(print_spam)
+
 
 
 
 print("Ch 3 Exercise 2: Not implemented") # Delete this line when you write your code!
+
+
 
 
 
