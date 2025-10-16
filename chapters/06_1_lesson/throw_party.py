@@ -21,7 +21,7 @@ def throw_party():
 
     # Ask if this is enough for a party
     if is_a_party(num_apples, num_pizzas):
-        return "Dude let's party down"
+        return "tri coalhfisudfhiusich"
     else:
         return "You'll have to go to the store first."
 
