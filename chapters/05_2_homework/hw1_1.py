@@ -16,19 +16,37 @@ print("********** Homework 1 Exercise 2 **********")
 
 print("Homework 1 Exercise 2: Not implemented") # Delete this line when you write your code!
 
-name = input('what is your name? ')
-if name == ('james'):
-     print('Hi james locking on to your position')
-elif name == ('william'):
-     flavor = input('what flavor sir?')
-     if flavor == ('classic'):
-        print('im sorry sir you have betrayed the creed. sending security.')
-elif flavor == ('white as always'):
-        print('Splendid sir. exelent choice')
+
+def rpc12(rpc1,rpc2):
+
+answer = input('want to play rock paper scissors?')
+if answer == ('yes'):
+    print ('ok')
+
+rpc1 = input('what do you want to be rock paper or scissors')
+rpc2 = input('what do you want to be rock paper or scissors')
+if rpc1 == 'rock':print('ok what about player 2') 
+if rpc1 == 'paper':
+ print('ok what about player 2')
+if rpc1 == 'scissors':
+ print('ok what about player 2')
 
 
-elif name == ('tj'):
-     print('Hey twin wanna monster?')
+
+def is_triangle(a, b, c):
+    print('is_triangle()', a, b, c)
+    if a>= b + c:
+        print('naw bro you got NO tringies')
+    elif b>= a + c:
+        print('naw bro you got NO tringies')
+    elif c>= b + a:
+        print('naw bro you got NO tringies')
+   
+   
+    else:
+        print("yeah twin its a tringie")
 
 
-("Homework 1 Exercise 3: Not implemented") # Delete this line when you write your code!
+is_triangle(3, 4, 5)
+is_triangle(2, 1, 1)
+is_triangle(0, 0, 0)

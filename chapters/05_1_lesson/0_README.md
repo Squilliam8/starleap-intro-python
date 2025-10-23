@@ -28,3 +28,36 @@
 
 ## Homework
   - **Link**: [Homework 1 (after Chapter 5)](../05_2_homework/0_README.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

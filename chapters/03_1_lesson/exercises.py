@@ -1,49 +1,14 @@
 
-##### Template for Chapter 3.14, Exercises 1 - 3 ######
+name = input('what is your name? ')
+if name == ('james'):
+     print('Hi james locking on to your position')
+elif name == ('william'):
+     flavor = input('what flavor sir?')
+     if flavor == ('classic'):
+        print('im sorry sir you have betrayed the creed. sending security.')
+elif flavor == ('white as always'):
+        print('Splendid sir. exelent choice')
 
 
-print("********** Ch 3 Exercise 1 **********")
-
-# Do your work for Exercise 1 here
-
-print("Ch 3 Exercise 1: Not implemented") # Delete this line when you write your code!
-
-def right_justify(input):
-    length = len(input)
-    print("length = ", length)
-    target = 70
-    spaces = target - length
-    spaces_string = ' '*spaces
-    print(spaces_string + input)
-
-right_justify('67 mustard mangos')
-
-
-
-
-
-
-print("********** Ch 3 Exercise 2 **********")
-def do_twice(f):
-    f()
-    f()
-    
-def print_spam():
-    print('spam')
-
-do_twice(print_spam)
-
-
-
-
-print("Ch 3 Exercise 2: Not implemented") # Delete this line when you write your code!
-
-
-
-
-
-print("********** Ch 3 Exercise 3 **********")
-
-# Do your work for Exercise 3 here.
-
-print("Ch 3 Exercise 3: Not implemented") # Delete this line when you write your code!
+elif name == ('tj'):
+     print('Hey twin wanna monster?')
