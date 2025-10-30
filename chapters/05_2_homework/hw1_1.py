@@ -1,52 +1,42 @@
+import getpass
 
-##### Template for Homework 1, Exercises 1-3 ######
+print('ROCK.  PAPER.   SCISSORS.')
 
+def playrps():
 
-print("********** Homework 1 Exercise 1 **********")
+    rpc1 = getpass.getpass('player one, rock paper or scissors')
+    rpc2 = getpass.getpass('player two, rock paper or scissors')
 
-# Do your work for Exercise 1 here
+    if rpc1 == 'rock' and rpc2 == 'paper':
+        print('ANNOUNCER: PLAYER TWO WINS A LIFETIME SUPPLY OF WHITE MONSTER')
+        print('ANNOUNCER: PLAYER ONE HAS TO DRINK A REDBULL. GROSS...')
 
-print("Homework 1 Exercise 1: Not implemented") # Delete this line when you write your code!
+    if rpc1 == 'rock' and rpc2 == 'rock':
+        print('ANNOUNCER: dang twin its a tie')
 
+    if rpc1 == 'rock' and rpc2 == 'scissors':
+        print('ANNOUNCER: PLAYER ONE GETS WILLIAMS AIRSOFT GUN!!! WILLIAM: WHAT NO I DIDNT SIGN UP FOR THIS!! ')
 
+    if rpc1 == 'paper' and rpc2 == 'rock':
+        print('ANNOUNCER: PLAYER ONE WINS A LIFETIME SUPPLY OF MONSTER')
 
-print("********** Homework 1 Exercise 2 **********")
+    if rpc1 == 'paper' and rpc2 == 'paper':
+        print(' ANNOUNCER: thats boring its a tie')
 
-# Do your work for Excercise 2 here
+    if rpc1 == 'paper' and rpc2 == 'scissors':
+        print('ANOUNCER:player one is really bad at this')
 
-print("Homework 1 Exercise 2: Not implemented") # Delete this line when you write your code!
+    if rpc1 == 'scissors' and rpc2 == 'rock':
+        print('ANNOUNCER:PLAYER TWO WINS BRAGGING RIGHTS')
 
+    if rpc1 == 'scissors' and rpc2 == 'paper':
+        print('ANOUNCER: player one wins normaly ')
 
-def rpc12(rpc1,rpc2):
+    if rpc1 == 'scissors' and rpc2 == 'scissors':
+        print('ANNOUCER: tie.                                ANNOUNCER: i dont get paid enough for this')
 
-answer = input('want to play rock paper scissors?')
-if answer == ('yes'):
-    print ('ok')
+playrps()
 
-rpc1 = input('what do you want to be rock paper or scissors')
-rpc2 = input('what do you want to be rock paper or scissors')
-if rpc1 == 'rock':print('ok what about player 2') 
-if rpc1 == 'paper':
- print('ok what about player 2')
-if rpc1 == 'scissors':
- print('ok what about player 2')
-
-
-
-def is_triangle(a, b, c):
-    print('is_triangle()', a, b, c)
-    if a>= b + c:
-        print('naw bro you got NO tringies')
-    elif b>= a + c:
-        print('naw bro you got NO tringies')
-    elif c>= b + a:
-        print('naw bro you got NO tringies')
-   
-   
-    else:
-        print("yeah twin its a tringie")
-
-
-is_triangle(3, 4, 5)
-is_triangle(2, 1, 1)
-is_triangle(0, 0, 0)
+answer = input ('do you want to play the rock paper scissors game show?')
+while answer == 'yes':
+    print('ANNOUNCER: ALRIGHT FOLKS WELCOME TO THE ROCK PAPER SCISSORS GAME SHOW TODAY WE HAVE TWO CONTESTANTS BATTLING FOR ')
