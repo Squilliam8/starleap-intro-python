@@ -37,6 +37,10 @@ def playrps():
 
 playrps()
 
-answer = input ('do you want to play the rock paper scissors game show?')
+answer = 'yes'
 while answer == 'yes':
-    print('ANNOUNCER: ALRIGHT FOLKS WELCOME TO THE ROCK PAPER SCISSORS GAME SHOW TODAY WE HAVE TWO CONTESTANTS BATTLING FOR ')
+    print('ANNOUNCER: ALRIGHT FOLKS WELCOME TO THE ROCK PAPER SCISSORS GAME SHOW TODAY WE HAVE TWO CONTESTANTS BATTLING FOR INFINITE MONSTER AND AIRSOFT GUNS! ')
+    playrps() 
+    answer = input ('do you want to play the rock paper scissors game show?')
+
+
