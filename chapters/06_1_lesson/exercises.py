@@ -69,5 +69,3 @@ print(f"acc({m},{n}) = {result}")
 
 
 
-
-
