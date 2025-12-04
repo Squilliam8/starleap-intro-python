@@ -9,8 +9,8 @@ turtle.tracer(False)
 turtles: list[turtle.Turtle] = []
 
 
-X_BOUND=300
-Y_BOUND=300
+X_BOUND=800
+Y_BOUND=800
 
 def draw_bounds():
     t = turtle.Turtle()
@@ -41,9 +41,10 @@ screen.onclick(add_turtle)
 
 while True:
     for t in turtles:
+        t.pensize(4)
         (old_x, old_y) =t.position()
         possible_moves = [t.forward, t.back, t.right, t.left]
-        random_value = random.randint(0, 100)
+        random_value = random.randint(1, 400)
         random.choice(possible_moves)(random_value)
         (new_x, new_y) = t.position()
         if (new_x > X_BOUND or new_x < -X_BOUND or new_y > Y_BOUND or new_y < -Y_BOUND):
