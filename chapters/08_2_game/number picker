@@ -1,0 +1,4 @@
+def main():
+    print('_' * 60)
+    print()
+    print("hi i will guess your number *sigh*")

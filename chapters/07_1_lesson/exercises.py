@@ -1,27 +1,28 @@
+import random
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
-##### Template for Chapter 7 Exercises 1 - 2 ######
-
-print("********** Ch 7 Exercise 1 **********")
-
-# Pads an input value with spaces to a specified target length
-def pad_str(value, target):
-    in_str = str(value)
-    l = len(in_str)
-    diff = target - l
-    return in_str + ' '*diff
-
-# Prints a formatted table row with consistent spacing of columns
-def print_table_row(a, b, c, d, length=20):
-    print(pad_str(a, length), pad_str(b, length), pad_str(c, length), pad_str(d, length))
-
-# Do your work for Excercise 1 here.  
-# Make use of the provided functions above.
-
-print("Ch 7 Exercise 1: Not implemented") # Delete this line when you write your code!
+def get_valid_guess():
+    while True:
+        guess_text = input("Enter Your Guess:")
+        try:
+            guess = int(guess_text)
+            if guess > MAX_NUMBER or guess < MIN_NUMBER:
+                raise ValueError()
+            return guess
+        except:
+            print("That is not a valid guess. Please try again.")
 
 
-print("********** Ch 7 Exercise 2 **********")
 
-# Do your work for Excercise 2 here.
+def play_picker():
+    number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    print(f"Computer picked {number}. Shhh.")
+    while True:
+        guess = get_valid_guess()
+        if guess > number:
+            print("You got it right! Thats a first.")
+            break
+        elif guess > number:
+            print
 
-print("Ch 7 Exercise 2: Not implemented") # Delete this line when you write your code!
