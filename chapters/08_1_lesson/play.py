@@ -1,25 +1,20 @@
-word= willweisswiggleworm
+prefixes = 'JKLMNOPQ'
+suffix = 'oscar' \
+    
 
-word == 'banana'
-print("All right, bananas.")
-
-if word < 'banana':
-    print('Your word, ' + word + ', comes before banana.')
-elif word > 'banana':
-    print('Your word, ' + word + ', comes after banana.')
-else:
-    print('All right, bananas.')
+for letter in prefixes:
+    print(letter + suffix)
 
 
+s = 'monty bincan'
+
+print(s[0:5])
 
 
 
-
-
-
-
-
-
+word = 'OSCAR'
+new_word = word.upper()
+print(new_word)
 
 
 

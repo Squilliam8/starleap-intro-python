@@ -19,7 +19,7 @@ def add_turtle():
     global turtles
     t = turtle.Turtle()
     turtle.colormode(255)
-    t.color((random.randint(1, 255), random.randint(1, 255), random.randint(1, 255)))
+    t.color((random.randint(13, 255), random.randint(56, 255), random.randint(90, 255)))
     t.penup()
     x = random.randint(-X_BOUND, X_BOUND)
     y = random.randint(-Y_BOUND, Y_BOUND)
