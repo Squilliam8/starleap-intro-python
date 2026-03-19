@@ -1,20 +1,37 @@
+pile = 50
+max_stones = 5
 
-def play_nims(pile, max_stones):
-    '''
-    An interactive two-person game; also known as Stones.
-    @param pile: the number of stones in the pile to start
-    @param max_stones: the maximum number of stones you can take on one turn
-    '''
+answer = int(input ('1-5 roc'))
 
-    ## Basic structure of program (feel free to alter as you please):
+if answer == (1,2,3,4,5):
+    pile -= answer
+    print(pile)
 
-#    while [pile is not empty]:
-#        while [player 1's answer is not valid]:
-#            [ask player 1]
-#            [execute player 1's move]
-#       
-#        while [player 2's answer is not valid]:
-#            [ask player 2]
-#            [execute player 2's move]
-#
-#    print "Game over.  Player __ is the winner!"
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def play_nims(pile, max_stones):
+#pile w/ 100
+# ask p1 how many 1-5
+#take stones
+# ask p2
+# take
+# reapeat until done 
+
+
+
+
+
+
+
