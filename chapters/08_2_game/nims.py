@@ -7,10 +7,10 @@ player = 1
 
 def valid_answer():
     while True:
-        guess_text=input(f"player{player} how many stones do you want to take") 
+        guess_text=input(f"player{player} how many nimsyes do you want to take") 
         try:
-            guess = int(guess)
-            if guess > max_stones or guess < min_stones:
+            guess = int(guess_text)
+            if guess > max_stones or guess < min_stones or guess > pile:
                 raise ValueError()
             return guess
         except:
@@ -19,9 +19,11 @@ def valid_answer():
 
 def play_nihmsyes(pile, max_stones):
         global player
-        print (f"there are (pile) nimsyes")
+       
         while pile >0:
+             print (f"there are {pile} nimsyes")
              answer = valid_answer()
+             
              pile -= answer
              if player == 1:
                   player = 2
@@ -32,7 +34,7 @@ def play_nihmsyes(pile, max_stones):
         else:
              print("player two takes the nimsyes")
              
-
+play_nihmsyes(50, 5)
 
 
 
