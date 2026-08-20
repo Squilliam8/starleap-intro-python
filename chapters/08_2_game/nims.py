@@ -35,25 +35,3 @@ def play_nihmsyes(pile, max_stones):
              print("player two takes the nimsyes")
              
 play_nihmsyes(50, 5)
-
-
-
-
-
-
-
-
-
-
-
-#take stones
-# ask p2
-# take
-# reapeat until done 
-
-
-
-
-
-
-
